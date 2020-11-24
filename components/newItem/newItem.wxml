@@ -1,0 +1,47 @@
+<view class="focus">
+    <view class="item">
+        <view class="item-top">
+            <image src="{{news.imgPath}}" />
+            <view class="title">
+                <view class="name">{{news.name}}</view>
+                <view class="content">{{news.prompt}}</view>
+            </view>
+            <view class="btn" hover-class="btn-click">关注</view>
+        </view>
+        <view class="item-content">
+            <view class="item-text" bind:tap="toDetails">{{news.text}}</view>
+            <imgs imgs="{{news.imgs}}"></imgs>
+            <view class="item-tip" wx:if="{{news.tips.length!==0}}">
+                <view class="tip-item" wx:for="{{news.tips}}" wx:key="index">
+                    <view class="icon">#</view>
+                    {{item}}
+                </view>
+            </view>
+        </view>
+        <view class="item-bottom">
+            <view class="icon" bind:tap="isGood" hover-class="click-bg">
+                <van-icon name="good-job-o" style="{{news.goods.isGood==1?'color:#25e0a2;':''}}" />
+                {{news.goods.goodCount}}
+            </view>
+            <view class="icon" bind:tap="toDetails" hover-class="click-bg">
+                <van-icon name="chat-o" />
+                {{news.chats.chatCount}}
+            </view>
+            <view class="icon" bind:tap="isStar" hover-class="click-bg">
+                <van-icon name="star-o" style="{{news.stars.isStar==1?'color:#25e0a2;':''}}" />
+                {{news.stars.starCount}}
+            </view>
+        </view>
+        <view class="item-msg" bind:tap="toDetails" wx:if="{{news.chats.chats.length!==0}}">
+            <view class="msg-item">
+                <view class="name">{{news.chats.chats[0].name}}:</view>
+                <view class="msg">{{news.chats.chats[0].text}}</view>
+            </view>
+            <view class="msg-item" wx:if="{{news.chats.chats.length>1}}">
+                <view class="name">{{news.chats.chats[1].name}}:</view>
+                <view class="msg">{{news.chats.chats[1].text}}</view>
+            </view>
+            <view class="show-all">查看全部评论...</view>
+        </view>
+    </view>
+</view>

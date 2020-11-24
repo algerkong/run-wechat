@@ -1,0 +1,8 @@
+<template name="focus">
+    <view class="focus-page">
+        <new-item wx:for="{{newList}}" wx:key="index" news="{{item}}"></new-item>
+        <view class="add-dynamic" hover-class="add-click" bind:tap="toAdd">
+            <van-icon name="records" />
+        </view>
+    </view>
+</template>

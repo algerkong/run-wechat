@@ -1,0 +1,59 @@
+<!-- pages/newDetails/newDetails.wxml -->
+<view class="main">
+    <view class="item-top">
+        <image src="{{news.imgPath}}" />
+        <view class="title">
+            <view class="name">{{news.name}}</view>
+            <view class="content">{{news.prompt}}</view>
+        </view>
+        <view class="btn" hover-class="btn-click">关注</view>
+    </view>
+    <view class="focus">
+        <view class="item  bottom20">
+            <view class="item-content">
+                <view class="item-text">{{news.text}}</view>
+                <imgs imgs="{{news.imgs}}"></imgs>
+                <view class="item-tip">
+                    <view class="tip-item" wx:for="{{news.tips}}" wx:key="index">
+                        <view class="icon">#</view>
+                        {{item}}
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="comment">
+            <view class="title">评论</view>
+            <textarea maxlength="100" auto-height="{{true}}" placeholder="说点什么吧..." value="{{input}}" bindinput="inputChange"></textarea>
+            <view class="send">
+                <view class="btn-send" bind:tap="commentSend" hover-class="btn-click">发送</view>
+            </view>
+        </view>
+        <view class="item-msg">
+            <view class="msg-item" wx:for="{{news.chats.chats}}" wx:key="index">
+                <view class="msg-top">
+                    <image src="https://picsum.photos/50/50.webp?random=1" />
+                    <view class="name">{{item.name}}</view>
+                    <view class="icon-good" hover-class="click-good" bind:tap="isGoodChat" data-index="{{index}}">
+                        <van-icon style="{{item.isGood==1?'color:#25e0a2;':''}}" name="good-job-o" />
+                    </view>
+                </view>
+                <view class="msg">{{item.text}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="bottom"></view>
+    <view class="bottom-bar">
+        <view class="icon" bind:tap="isGood" hover-class="click-bg">
+            <van-icon name="good-job-o" style="{{news.goods.isGood==1?'color:#25e0a2;':''}}" />
+            {{news.goods.goodCount}}
+        </view>
+        <view class="icon" hover-class="click-bg">
+            <van-icon name="chat-o" />
+            {{news.chats.chatCount}}
+        </view>
+        <view class="icon" hover-class="click-bg" bind:tap="isStar">
+            <van-icon name="star-o" style="{{news.stars.isStar==1?'color:#25e0a2;':''}}" />
+            {{news.stars.starCount}}
+        </view>
+    </view>
+</view>

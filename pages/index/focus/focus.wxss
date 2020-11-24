@@ -1,0 +1,20 @@
+.add-dynamic {
+    width: 80rpx;
+    height: 80rpx;
+    background-color: #cffdee;
+    border-radius: 50%;
+    color: #25e0a2;
+    font-size: 50rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30rpx rgba(0, 0, 0, 0.171);
+    position: fixed;
+    bottom: 150rpx;
+    right: 50rpx;
+}
+
+.add-click {
+    filter: brightness(80%);
+    transition: .1s;
+}

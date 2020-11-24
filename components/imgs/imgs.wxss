@@ -1,0 +1,12 @@
+.item-imgs {
+    padding: 20rpx 0;
+    display: grid;
+    grid-template-columns: repeat(3, 230rpx);
+    grid-row-gap: 10rpx;
+}
+
+.item-imgs>image {
+    width: 220rpx;
+    height: 220rpx;
+    border-radius: 8rpx;
+}

@@ -1,0 +1,21 @@
+<template name="activity">
+    <view class="activity-main">
+        <view class="banner  bottom20">
+            <swiper indicator-dots="{{false}}" autoplay easing-function="{{linear}}">
+                <swiper-item class="swiper-item" item-id="" wx:for="{{5}}" wx:key="index">
+                    <image class="swiper-img" src="{{'https://picsum.photos/600/200.webp?random='+index}}" />
+                </swiper-item>
+            </swiper>
+        </view>
+        <view class="activity-list">
+            <view class="item" hover-class="click-item" wx:for="{{activityList}}" wx:key="index">
+                <image src="{{item.imgPath}}" />
+                <view class="content">
+                    <view class="text">{{item.text}}</view>
+                    <view class="time">报名时间: {{item.time}}</view>
+                    <view class="hot">热度:{{item.hot}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,13 @@
+<view class="main">
+    <view class="content">
+        <textarea class="input" maxlength="1000" auto-height="{{true}}" placeholder="分享你此刻的想法..." value="{{input}}" bindinput="inputChange"></textarea>
+        <imgs imgs="{{imgs}}"></imgs>
+        <view class="add-img" wx:if="{{isAddImg}}" bind:tap="chooseImgs">
+            <van-icon name="plus" />
+        </view>
+    </view>
+    <view class="bottom"></view>
+    <view class="bottom-bar">
+        <view class="btn" bind:tap="addDynamic">发布</view>
+    </view>
+</view>

@@ -1,0 +1,14 @@
+<!-- pages/index/index.wxml -->
+<import src="./focus/focus.wxml"></import>
+<import src="./activity/activity.wxml"></import>
+<view class="main">
+    <van-tabs active="{{ active }}" sticky swipeable color="#333333">
+        <van-tab title="关注">
+            <template is="focus" data="{{newList:newList}}"></template>
+        </van-tab>
+        <van-tab title="活动">
+            <template is="activity" data="{{activityList:activityList}}"></template>
+        </van-tab>
+        <van-tab title="圈子">内容 3</van-tab>
+    </van-tabs>
+</view>

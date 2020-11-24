@@ -1,0 +1,3 @@
+<view class="item-imgs">
+  <image wx:for="{{imgs}}" mode="aspectFill" src="{{item}}" wx:key="index" bind:tap="bigShow" data-index="{{index}}"></image>
+</view>

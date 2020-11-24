@@ -1,0 +1,10 @@
+/**app.wxss**/
+:root {}
+
+.bottom20 {
+  border-bottom: 20rpx solid #f1f1f1;
+}
+
+image {
+  background-color: #eeeeee;
+}

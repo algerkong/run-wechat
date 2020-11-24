@@ -1,0 +1,11 @@
+/* pages/index/index.wxss */
+@import "./focus/focus.wxss";
+@import "./activity/activity.wxss";
+
+.main {
+    background-color: #fbfbfbf6;
+}
+
+.tabs {
+    box-shadow: 0 5rpx 10rpx #333333;
+}

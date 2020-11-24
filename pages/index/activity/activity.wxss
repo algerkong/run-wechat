@@ -1,0 +1,60 @@
+.click-item {
+    background-color: #eeeeee !important;
+    border-radius: 10rpx;
+    transition: background-color .2s;
+}
+
+.activity-main .banner {
+    padding: 30rpx;
+    box-sizing: border-box;
+}
+
+.activity-main .banner swiper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15rpx;
+}
+
+
+.activity-main swiper image {
+    width: 100%;
+    height: 100%;
+}
+
+.activity-main>.activity-list {
+    padding: 0 10rpx;
+}
+
+.activity-main>.activity-list>.item {
+    display: flex;
+    justify-content: start;
+    padding: 20rpx 20rpx;
+}
+
+.activity-main>.activity-list>.item>image {
+    width: 300rpx;
+    height: 150rpx;
+    border-radius: 10rpx;
+}
+
+.activity-main>.activity-list>.item>.content {
+    flex: 1;
+    padding-left: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activity-main>.activity-list>.item>.content>.text {
+    font-size: 30rpx;
+}
+
+.activity-main>.activity-list>.item>.content>.time {
+    font-size: 20rpx;
+
+}
+
+.activity-main>.activity-list>.item>.content>.hot {
+    font-size: 20rpx;
+    color: #888888;
+}
