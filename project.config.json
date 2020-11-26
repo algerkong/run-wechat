@@ -59,7 +59,13 @@
       "list": []
     },
     "miniprogram": {
-      "list": []
+      "list": [
+        {
+          "name": "pages/message/message",
+          "pathName": "pages/message/message",
+          "scene": null
+        }
+      ]
     }
   }
 }

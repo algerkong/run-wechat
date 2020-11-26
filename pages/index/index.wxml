@@ -9,6 +9,5 @@
         <van-tab title="活动">
             <template is="activity" data="{{activityList:activityList}}"></template>
         </van-tab>
-        <van-tab title="圈子">内容 3</van-tab>
     </van-tabs>
 </view>

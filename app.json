@@ -1,12 +1,35 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/chat/chat",
     "pages/plan/plan",
     "pages/run/run",
     "pages/my/my",
     "pages/newDetails/newDetails",
-    "pages/addDynamic/addDynamic"
+    "pages/addDynamic/addDynamic",
+    "pages/message/message"
   ],
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/image/home.png",
+        "selectedIconPath": "/image/home_select.png"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "聊天",
+        "iconPath": "/image/message.png",
+        "selectedIconPath": "/image/message_select.png"
+      }
+    ]
+  },
   "usingComponents": {
     "van-popup": "@vant/weapp/popup/index",
     "van-nav-bar": "@vant/weapp/nav-bar/index",
@@ -17,7 +40,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "哈喽",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"

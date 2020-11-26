@@ -1,0 +1,41 @@
+/* components/chatItem/chatItem.wxss */
+.item {
+    padding: 15rpx 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-click {
+    background-color: #eee;
+    transition: .1s;
+}
+
+.item>image {
+    width: 85rpx;
+    height: 85rpx;
+    border-radius: 10rpx;
+}
+
+.item>.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    padding-left: 20rpx;
+}
+
+.item>.content>.name {
+    font-size: 30rpx;
+    color: #333333;
+}
+
+.item>.content>.text {
+    font-size: 25rpx;
+    color: #888888;
+}
+
+.item>.time {
+    font-size: 22rpx;
+    color: #888888;
+}

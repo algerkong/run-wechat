@@ -1,0 +1,38 @@
+/* pages/message/message.wxss */
+.main {
+    padding: 30rpx;
+    background-color: #f8f8f8;
+    min-height: 100vh;
+}
+
+.msg {
+    display: flex;
+    align-items: center;
+}
+
+.msg>image {
+    width: 75rpx;
+    height: 75rpx;
+    border-radius: 10rpx;
+}
+
+.msg>.content {
+    font-size: 30rpx;
+    padding: 0 20rpx;
+    max-width: 350rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.msg>.content>.text {
+    width: 100%;
+    padding: 10rpx 20rpx;
+    border-radius: 10rpx;
+    color: #ffffff;
+    background-color: #25e0a2;
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-all;
+}

@@ -1,0 +1,9 @@
+<!-- pages/message/message.wxml -->
+<view class="main">
+    <view class="msg">
+        <image src="{{'https://picsum.photos/60/60.webp?random='+friend.id}}" />
+        <view class="content">
+            <view class="text">aaaaaaaaaaaaaaaaaaaaaaaaaaa</view>
+        </view>
+    </view>
+</view>

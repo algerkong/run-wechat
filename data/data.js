@@ -329,11 +329,290 @@ const activityList = [
     }
 ]
 
+const friendList = [
+    {
+        id: 1,
+        name: '刘俊杰',
+        imgPath: '',
+        time: '20:01',
+        chatList: [
+            {
+                isfl: 0,
+                text: '你在干嘛啊?'
+            },
+            {
+                isfl: 1,
+                text: '没干嘛'
+            },
+            {
+                isfl: 0,
+                text: '现在几点了'
+            },
+            {
+                isfl: 1,
+                text: '25点'
+            },
+            {
+                isfl: 1,
+                text: '拜拜...'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://placeimg.com/400/400/any'
+            }
+        ]
+    },
+    {
+        id: 2,
+        name: '齐云飞',
+        imgPath: '',
+        time: '20:00',
+        chatList: [
+            {
+                isfl: 0,
+                text: 'hello?'
+            },
+            {
+                isfl: 1,
+                text: 'What\'s the matter'
+            },
+            {
+                isfl: 0,
+                text: 'There\'s nothing'
+            },
+            {
+                isfl: 1,
+                text: 'Bye bye.'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://placeimg.com/400/400/any'
+            }
+        ]
+    },
+    {
+        id: 3,
+        name: '杨家兴',
+        imgPath: '',
+        time: '15:00',
+        chatList: [
+            {
+                isfl: 0,
+                text: '你在干嘛啊?'
+            },
+            {
+                isfl: 1,
+                text: '没干嘛'
+            },
+            {
+                isfl: 0,
+                text: '现在几点了'
+            },
+            {
+                isfl: 1,
+                text: '25点'
+            },
+            {
+                isfl: 1,
+                text: '拜拜...'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://placeimg.com/400/400/any'
+            }
+        ]
+    },
+    {
+        id: 4,
+        name: '张三',
+        imgPath: '',
+        time: '14:44',
+        chatList: [
+            {
+                isfl: 0,
+                text: '你在干嘛啊?'
+            },
+            {
+                isfl: 1,
+                text: '没干嘛'
+            },
+            {
+                isfl: 0,
+                text: '现在几点了'
+            },
+            {
+                isfl: 1,
+                text: '25点'
+            },
+            {
+                isfl: 1,
+                text: '拜拜...'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://placeimg.com/400/400/any'
+            }
+        ]
+    },
+    {
+        id: 5,
+        name: '李四',
+        imgPath: '',
+        time: '13:01',
+        chatList: [
+            {
+                isfl: 0,
+                text: 'hello?'
+            },
+            {
+                isfl: 1,
+                text: 'What\'s the matter'
+            },
+            {
+                isfl: 0,
+                text: 'There\'s nothing'
+            },
+            {
+                isfl: 1,
+                text: 'Bye bye.'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://placeimg.com/400/400/any'
+            }
+        ]
+    },
+    {
+        id: 6,
+        name: '王五',
+        imgPath: '',
+        time: '2019-11-20',
+        chatList: [
+            {
+                isfl: 0,
+                text: '你在干嘛啊?'
+            },
+            {
+                isfl: 1,
+                text: '没干嘛'
+            },
+            {
+                isfl: 0,
+                text: '现在几点了'
+            },
+            {
+                isfl: 1,
+                text: '25点'
+            },
+            {
+                isfl: 1,
+                text: '拜拜...'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://placeimg.com/400/400/any'
+            }
+        ]
+    },
+    {
+        id: 7,
+        name: '赵六',
+        imgPath: '',
+        time: '2020-01-20',
+        chatList: [
+            {
+                isfl: 0,
+                text: '你在干嘛啊?'
+            },
+            {
+                isfl: 1,
+                text: '没干嘛'
+            },
+            {
+                isfl: 0,
+                text: '现在几点了'
+            },
+            {
+                isfl: 1,
+                text: '25点'
+            },
+            {
+                isfl: 1,
+                text: '拜拜...'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://placeimg.com/400/400/any'
+            }
+        ]
+    },
+    {
+        id: 8,
+        name: 'Jack',
+        imgPath: '',
+        time: '2019-01-20',
+        chatList: [
+            {
+                isfl: 0,
+                text: 'hello?'
+            },
+            {
+                isfl: 1,
+                text: 'What\'s the matter'
+            },
+            {
+                isfl: 0,
+                text: 'There\'s nothing'
+            },
+            {
+                isfl: 1,
+                text: 'Bye bye.'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://placeimg.com/400/400/any'
+            }
+        ]
+    },
+    {
+        id: 9,
+        name: 'Tom',
+        imgPath: '',
+        time: '2019-01-20',
+        chatList: [
+            {
+                isfl: 0,
+                text: '你在干嘛啊?'
+            },
+            {
+                isfl: 1,
+                text: '没干嘛'
+            },
+            {
+                isfl: 0,
+                text: '现在几点了'
+            },
+            {
+                isfl: 1,
+                text: '25点'
+            },
+            {
+                isfl: 1,
+                text: '拜拜...'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://placeimg.com/400/400/any'
+            }
+        ]
+    }
+]
 
 
 
 module.exports = {
     newList: newList,
     newsFunction: newsFunction,
-    activityList: activityList
+    activityList: activityList,
+    friendList: friendList
 }

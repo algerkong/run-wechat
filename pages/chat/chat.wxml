@@ -1,0 +1,6 @@
+<!-- pages/chat/chat.wxml -->
+<view class="mian">
+    <view class="chat-item" wx:for="{{friendList}}" wx:key="index" bind:tap="toMessage" data-id="{{item.id}}">
+        <chat-item item="{{item}}"></chat-item>
+    </view>
+</view>
