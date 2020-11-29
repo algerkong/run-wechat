@@ -19,6 +19,7 @@ Page({
     })
   },
 
+  // 选择图片
   chooseImgs() {
     wx.chooseImage({
       count: 9 - this.imgs.length,
@@ -37,6 +38,7 @@ Page({
     });
   },
 
+  // 添加动态
   addDynamic() {
     if (this.data.input != '') {
       data.newsFunction.addNews('我', this.data.input, this.imgs)

@@ -22,7 +22,9 @@
     flex-direction: column;
     justify-content: space-around;
     flex: 1;
-    padding-left: 20rpx;
+    padding: 0 20rpx;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .item>.content>.name {
@@ -31,8 +33,12 @@
 }
 
 .item>.content>.text {
+    width: 100%;
     font-size: 25rpx;
     color: #888888;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
 }
 
 .item>.time {

@@ -24,6 +24,8 @@ Page({
     })
   },
 
+
+  // 修改主页数据
   prevPage() {
     let pages = getCurrentPages();
     let prevPage = pages[pages.length - 2]
@@ -31,11 +33,14 @@ Page({
       newList: data.newList
     })
   },
+
   inputChange(e) {
     this.setData({
       input: e.detail.value
     })
   },
+
+  // 发评论
   commentSend() {
     if (this.data.input != "") {
       let id = this.data.id
@@ -63,6 +68,8 @@ Page({
       });
     }
   },
+
+  // 评论点赞或取消
   isGoodChat(e) {
     let id = this.data.id
     let index = e.currentTarget.dataset.index
@@ -72,11 +79,14 @@ Page({
       news: data.newList[id - 1]
     })
   },
+
   showBottom() {
     this.setData({
       isBottom: !this.data.isBottom
     })
   },
+
+  // 点赞
   isGood() {
     let id = this.data.id
     data.newsFunction.newsGood(id)
@@ -86,6 +96,8 @@ Page({
     this.prevPage()
 
   },
+
+  // 收藏
   isStar() {
     let id = this.data.id
     data.newsFunction.newsStar(id)

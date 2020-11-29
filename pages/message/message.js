@@ -6,20 +6,107 @@ Page({
    * 页面的初始数据
    */
   data: {
-
-    friend: null
+    friend: null,
+    id: null,
+    input: ''
   },
+
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // 根据id查找消息列表
     let friend = data.friendList.find(function (item) {
       return item.id === options.id / 1
     })
-    this.setData({
-      friend: friend
+
+    // 设置标题
+    wx.setNavigationBarTitle({
+      title: friend.name,
     })
+
+    this.setData({
+      friend: friend,
+      id: options.id / 1
+    })
+
+    this.pageScrollToBottom()
+
+  },
+
+  // 图片大图显示
+  imgShow(e) {
+    wx.previewImage({
+      urls: [e.currentTarget.dataset.src]
+    });
+  },
+
+  //选择发送的图片
+  chooseImgs() {
+    let that = this
+    wx.chooseImage({
+      count: 9,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success: (result) => {
+        result.tempFilePaths.forEach(item => {
+          data.friendFunction.sendMsg(that.data.id, { imgPath: item })
+        })
+
+        let friend = data.friendList.find(function (item) {
+          return item.id === that.data.id / 1
+        })
+
+        that.pageScrollToBottom()
+
+
+        that.setData({
+          friend: friend
+        })
+      }
+    });
+  },
+
+  // 获取容器高度，使页面滚动到容器底部
+  pageScrollToBottom: function () {
+    wx.createSelectorQuery().select('.main').boundingClientRect(function (rect) {
+      if (rect) {
+        wx.pageScrollTo({
+          scrollTop: rect.height
+        })
+      }
+    }).exec()
+  },
+
+  inputBlur(e) {
+    this.setData({
+      input: e.detail.value
+    })
+  },
+
+  //发送信息
+  sendMsg(e) {
+    let that = this
+    if (that.data.input != null && that.data.input != "") {
+      data.friendFunction.sendMsg(that.data.id, { text: that.data.input })
+
+      let friend = data.friendList.find(function (item) {
+        return item.id === that.data.id / 1
+      })
+      that.pageScrollToBottom()
+
+      that.setData({
+        friend: friend,
+        input: ''
+      })
+
+      let pages = getCurrentPages();
+      let prevPage = pages[pages.length - 2]
+      prevPage.setData({
+        friendList: data.friendList
+      })
+    }
   },
 
   /**

@@ -1,9 +1,16 @@
 <!-- pages/message/message.wxml -->
 <view class="main">
-    <view class="msg">
-        <image src="{{'https://picsum.photos/60/60.webp?random='+friend.id}}" />
+    <view wx:for="{{friend.chatList}}" wx:key="index" class="msg {{item.isfl==0?'':'msg-r'}}">
+        <image src="{{item.isfl==0?'https://picsum.photos/60/60.webp?random='+friend.id:'https://picsum.photos/60/60.webp?random=111'}}" />
         <view class="content">
-            <view class="text">aaaaaaaaaaaaaaaaaaaaaaaaaaa</view>
+            <view class="text" wx:if="{{!item.imgPath}}">{{item.text}}</view>
+            <image class="content-img" mode="aspectFill" wx:else src="{{item.imgPath}}" data-src="{{item.imgPath}}" bind:tap="imgShow" />
         </view>
     </view>
+    <view class="bottom-placeholder"></view>
+</view>
+<view class="bottom">
+    <input type="text" cursor-spacing="20" value="{{input}}" bindinput="inputBlur" />
+    <van-icon class="icon-img" name="photo" bind:tap="chooseImgs" />
+    <view class="btn-send" wx:if="{{input!=''}}" bind:tap="sendMsg">发送</view>
 </view>

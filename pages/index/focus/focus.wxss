@@ -1,3 +1,7 @@
+.focus-page {
+    padding: 15rpx 0;
+}
+
 .add-dynamic {
     width: 80rpx;
     height: 80rpx;

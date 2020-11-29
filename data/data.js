@@ -608,11 +608,37 @@ const friendList = [
     }
 ]
 
+let friendFunction = {
+    sendMsg: (id, msg) => {
+        let friend = friendList.find(item => {
+            return item.id == id
+        })
+        if (!msg.imgPath) {
+            friend.chatList.push({
+                isfl: 1,
+                text: msg.text
+            })
+        } else {
+            friend.chatList.push({
+                isfl: 1,
+                imgPath: msg.imgPath
+            })
+        }
+        friend.chatList.push({
+            isfl: 0,
+            text: '啊啊啊啊啊啊啊啊'
+        })
+
+        console.log(friendList[0]);
+    }
+}
+
 
 
 module.exports = {
     newList: newList,
     newsFunction: newsFunction,
     activityList: activityList,
-    friendList: friendList
+    friendList: friendList,
+    friendFunction: friendFunction
 }
