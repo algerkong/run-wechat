@@ -20,6 +20,7 @@
     width: 75rpx;
     height: 75rpx;
     border-radius: 10rpx;
+    /* border-radius: 50%; */
 }
 
 .msg>.content {

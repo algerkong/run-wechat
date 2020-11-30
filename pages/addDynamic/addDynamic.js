@@ -42,11 +42,7 @@ Page({
   addDynamic() {
     if (this.data.input != '') {
       data.newsFunction.addNews('我', this.data.input, this.imgs)
-      let pages = getCurrentPages();
-      let prevPage = pages[pages.length - 2]
-      prevPage.setData({
-        newList: data.newList
-      })
+      getCurrentPages()[0].onLoad()
 
       wx.navigateBack();
     } else {

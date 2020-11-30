@@ -1,5 +1,5 @@
 
-const newList = [
+let newList = [
     {
         id: 1,
         name: '刘俊杰',
@@ -255,7 +255,7 @@ let newsFunction = {
 }
 
 
-const activityList = [
+let activityList = [
     {
         text: '四星期减脂挑战,赢取限时徽章赢取限时徽章',
         time: '2020.11.03-2020.11.30',
@@ -329,7 +329,7 @@ const activityList = [
     }
 ]
 
-const friendList = [
+let friendList = [
     {
         id: 1,
         name: '刘俊杰',
@@ -358,7 +358,7 @@ const friendList = [
             },
             {
                 isfl: 1,
-                imgPath: 'https://placeimg.com/400/400/any'
+                imgPath: 'https://picsum.photos/100/100.webp'
             }
         ]
     },
@@ -386,7 +386,7 @@ const friendList = [
             },
             {
                 isfl: 1,
-                imgPath: 'https://placeimg.com/400/400/any'
+                imgPath: 'https://picsum.photos/100/100.webp'
             }
         ]
     },
@@ -418,7 +418,7 @@ const friendList = [
             },
             {
                 isfl: 1,
-                imgPath: 'https://placeimg.com/400/400/any'
+                imgPath: 'https://picsum.photos/100/100.webp'
             }
         ]
     },
@@ -450,7 +450,7 @@ const friendList = [
             },
             {
                 isfl: 1,
-                imgPath: 'https://placeimg.com/400/400/any'
+                imgPath: 'https://picsum.photos/100/100.webp'
             }
         ]
     },
@@ -478,7 +478,7 @@ const friendList = [
             },
             {
                 isfl: 1,
-                imgPath: 'https://placeimg.com/400/400/any'
+                imgPath: 'https://picsum.photos/100/100.webp'
             }
         ]
     },
@@ -510,7 +510,7 @@ const friendList = [
             },
             {
                 isfl: 1,
-                imgPath: 'https://placeimg.com/400/400/any'
+                imgPath: 'https://picsum.photos/100/100.webp'
             }
         ]
     },
@@ -542,7 +542,7 @@ const friendList = [
             },
             {
                 isfl: 1,
-                imgPath: 'https://placeimg.com/400/400/any'
+                imgPath: 'https://picsum.photos/100/100.webp'
             }
         ]
     },
@@ -570,7 +570,7 @@ const friendList = [
             },
             {
                 isfl: 1,
-                imgPath: 'https://placeimg.com/400/400/any'
+                imgPath: 'https://picsum.photos/100/100.webp'
             }
         ]
     },
@@ -602,7 +602,283 @@ const friendList = [
             },
             {
                 isfl: 1,
-                imgPath: 'https://placeimg.com/400/400/any'
+                imgPath: 'https://picsum.photos/100/100.webp'
+            }
+        ]
+    },
+    {
+        id: 1,
+        name: '刘俊杰',
+        imgPath: '',
+        time: '20:01',
+        chatList: [
+            {
+                isfl: 0,
+                text: '你在干嘛啊?'
+            },
+            {
+                isfl: 1,
+                text: '没干嘛'
+            },
+            {
+                isfl: 0,
+                text: '现在几点了'
+            },
+            {
+                isfl: 1,
+                text: '25点'
+            },
+            {
+                isfl: 1,
+                text: '拜拜...'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://picsum.photos/100/100.webp'
+            }
+        ]
+    },
+    {
+        id: 2,
+        name: '齐云飞',
+        imgPath: '',
+        time: '20:00',
+        chatList: [
+            {
+                isfl: 0,
+                text: 'hello?'
+            },
+            {
+                isfl: 1,
+                text: 'What\'s the matter'
+            },
+            {
+                isfl: 0,
+                text: 'There\'s nothing'
+            },
+            {
+                isfl: 1,
+                text: 'Bye bye.'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://picsum.photos/100/100.webp'
+            }
+        ]
+    },
+    {
+        id: 3,
+        name: '杨家兴',
+        imgPath: '',
+        time: '15:00',
+        chatList: [
+            {
+                isfl: 0,
+                text: '你在干嘛啊?'
+            },
+            {
+                isfl: 1,
+                text: '没干嘛'
+            },
+            {
+                isfl: 0,
+                text: '现在几点了'
+            },
+            {
+                isfl: 1,
+                text: '25点'
+            },
+            {
+                isfl: 1,
+                text: '拜拜...'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://picsum.photos/100/100.webp'
+            }
+        ]
+    },
+    {
+        id: 4,
+        name: '张三',
+        imgPath: '',
+        time: '14:44',
+        chatList: [
+            {
+                isfl: 0,
+                text: '你在干嘛啊?'
+            },
+            {
+                isfl: 1,
+                text: '没干嘛'
+            },
+            {
+                isfl: 0,
+                text: '现在几点了'
+            },
+            {
+                isfl: 1,
+                text: '25点'
+            },
+            {
+                isfl: 1,
+                text: '拜拜...'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://picsum.photos/100/100.webp'
+            }
+        ]
+    },
+    {
+        id: 5,
+        name: '李四',
+        imgPath: '',
+        time: '13:01',
+        chatList: [
+            {
+                isfl: 0,
+                text: 'hello?'
+            },
+            {
+                isfl: 1,
+                text: 'What\'s the matter'
+            },
+            {
+                isfl: 0,
+                text: 'There\'s nothing'
+            },
+            {
+                isfl: 1,
+                text: 'Bye bye.'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://picsum.photos/100/100.webp'
+            }
+        ]
+    },
+    {
+        id: 6,
+        name: '王五',
+        imgPath: '',
+        time: '2019-11-20',
+        chatList: [
+            {
+                isfl: 0,
+                text: '你在干嘛啊?'
+            },
+            {
+                isfl: 1,
+                text: '没干嘛'
+            },
+            {
+                isfl: 0,
+                text: '现在几点了'
+            },
+            {
+                isfl: 1,
+                text: '25点'
+            },
+            {
+                isfl: 1,
+                text: '拜拜...'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://picsum.photos/100/100.webp'
+            }
+        ]
+    },
+    {
+        id: 7,
+        name: '赵六',
+        imgPath: '',
+        time: '2020-01-20',
+        chatList: [
+            {
+                isfl: 0,
+                text: '你在干嘛啊?'
+            },
+            {
+                isfl: 1,
+                text: '没干嘛'
+            },
+            {
+                isfl: 0,
+                text: '现在几点了'
+            },
+            {
+                isfl: 1,
+                text: '25点'
+            },
+            {
+                isfl: 1,
+                text: '拜拜...'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://picsum.photos/100/100.webp'
+            }
+        ]
+    },
+    {
+        id: 8,
+        name: 'Jack',
+        imgPath: '',
+        time: '2019-01-20',
+        chatList: [
+            {
+                isfl: 0,
+                text: 'hello?'
+            },
+            {
+                isfl: 1,
+                text: 'What\'s the matter'
+            },
+            {
+                isfl: 0,
+                text: 'There\'s nothing'
+            },
+            {
+                isfl: 1,
+                text: 'Bye bye.'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://picsum.photos/100/100.webp'
+            }
+        ]
+    },
+    {
+        id: 9,
+        name: 'Tom',
+        imgPath: '',
+        time: '2019-01-20',
+        chatList: [
+            {
+                isfl: 0,
+                text: '你在干嘛啊?'
+            },
+            {
+                isfl: 1,
+                text: '没干嘛'
+            },
+            {
+                isfl: 0,
+                text: '现在几点了'
+            },
+            {
+                isfl: 1,
+                text: '25点'
+            },
+            {
+                isfl: 1,
+                text: '拜拜...'
+            },
+            {
+                isfl: 1,
+                imgPath: 'https://picsum.photos/100/100.webp'
             }
         ]
     }
@@ -626,12 +902,61 @@ let friendFunction = {
         }
         friend.chatList.push({
             isfl: 0,
-            text: '啊啊啊啊啊啊啊啊'
+            text: '是啊'
         })
 
         console.log(friendList[0]);
     }
 }
+
+let userList = {
+    id: 0,
+    list: [
+        {
+            id: 1,
+            userName: 'admin',
+            password: '123456',
+            name: '刘先生不可爱'
+        },
+        {
+            id: 2,
+            userName: 'zhangsan',
+            password: '123456',
+            name: '张三'
+        }
+    ]
+}
+
+let userFunction = {
+    userAdd: (name, userName, password) => {
+        userList.list.push({
+            id: userList.list.length + 1,
+            userName: userName,
+            password: password,
+            name: name
+        })
+    },
+    userLogin: (userName, password) => {
+        let user = userList.list.find(item => {
+            return item.userName == userName
+        })
+        if (typeof user != "undefined" && user.password == password) {
+            userList.id = user.id
+            return user
+        }
+        return null
+    },
+    userFindById(id) {
+        let user = userList.list.find(item => {
+            return item.id == id
+        })
+        return user
+    }
+
+
+}
+
+
 
 
 
@@ -640,5 +965,7 @@ module.exports = {
     newsFunction: newsFunction,
     activityList: activityList,
     friendList: friendList,
-    friendFunction: friendFunction
+    friendFunction: friendFunction,
+    userList: userList,
+    userFunction: userFunction
 }

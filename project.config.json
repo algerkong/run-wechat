@@ -63,6 +63,12 @@
         {
           "name": "pages/message/message",
           "pathName": "pages/message/message",
+          "scene": null,
+          "query": ""
+        },
+        {
+          "name": "user",
+          "pathName": "pages/userDetails/userDetails",
           "scene": null
         }
       ]

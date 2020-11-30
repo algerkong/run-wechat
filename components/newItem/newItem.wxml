@@ -1,7 +1,7 @@
 <view class="focus">
     <view class="item">
         <view class="item-top">
-            <image src="{{news.imgPath}}" />
+            <image src="{{news.imgPath}}" bind:tap="toUser" />
             <view class="title">
                 <view class="name">{{news.name}}</view>
                 <view class="content">{{news.prompt}}</view>

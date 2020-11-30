@@ -27,11 +27,7 @@ Page({
 
   // 修改主页数据
   prevPage() {
-    let pages = getCurrentPages();
-    let prevPage = pages[pages.length - 2]
-    prevPage.setData({
-      newList: data.newList
-    })
+    getCurrentPages()[0].onLoad()
   },
 
   inputChange(e) {

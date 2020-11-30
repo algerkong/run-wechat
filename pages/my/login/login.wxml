@@ -1,0 +1,14 @@
+<!-- pages/my/login/login.wxml -->
+<view class="main">
+    <view class="title">登录</view>
+    <view class="from">
+        <input type="text" value="{{userName}}" data-type="userName" placeholder="账号/用户名" bindblur="inputBlur" />
+        <input type="text" value="{{password}}" password placeholder="密码" data-type="password" bindblur="inputBlur" />
+    </view>
+    <view class="btn-page">
+        <view class="btn" hover-class="btn-click" bind:tap="login">登录</view>
+    </view>
+    <view class="text">
+        <view bind:tap="toRegistered">没有账号?去注册</view>
+    </view>
+</view>

@@ -1,0 +1,11 @@
+<!-- pages/userDetails/userDetails.wxml -->
+<view class="main">
+    <view class="detail">
+        <image class="head-img" src="https://picsum.photos/100/100.webp" />
+        <view class="name">{{user.name}}</view>
+        <view class="text">{{user.prompt}}</view>
+        <view class="focus">
+            <new-item wx:for="{{newList}}" wx:key="index" news="{{item}}"></new-item>
+        </view>
+    </view>
+</view>

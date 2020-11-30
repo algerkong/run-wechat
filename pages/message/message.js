@@ -101,12 +101,18 @@ Page({
         input: ''
       })
 
-      let pages = getCurrentPages();
-      let prevPage = pages[pages.length - 2]
-      prevPage.setData({
-        friendList: data.friendList
-      })
+      getCurrentPages()[0].onLoad();
     }
+  },
+
+  toUser(e) {
+    if (e.currentTarget.dataset.isfl != "0") {
+      return
+    }
+
+    wx.navigateTo({
+      url: '/pages/userDetails/userDetails?id=' + this.data.id
+    });
   },
 
   /**

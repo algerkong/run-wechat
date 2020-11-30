@@ -21,6 +21,18 @@
     height: 100%;
 }
 
+.activity-main swiper swiper-item {
+    position: relative;
+}
+
+.activity-main swiper .img-text {
+    position: absolute;
+    bottom: 20rpx;
+    left: 20rpx;
+    color: #ffffff;
+    font-size: 30rpx;
+}
+
 .activity-main>.activity-list {
     padding: 0 10rpx;
 }

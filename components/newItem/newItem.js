@@ -39,6 +39,11 @@ Component({
       this.setData({
         news: data.newList[id - 1]
       })
+    },
+    toUser() {
+      wx.navigateTo({
+        url: '/pages/userDetails/userDetails?id=' + this.data.news.id + '&isNews=0'
+      });
     }
   }
 })

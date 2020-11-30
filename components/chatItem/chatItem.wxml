@@ -3,7 +3,9 @@
     <image src="{{'https://picsum.photos/60/60.webp?random='+item.id}}" />
     <view class="content">
         <view class="name">{{item.name}}</view>
-        <view class="text">{{item.chatList[item.chatList.length-1].text}}</view>
+        <view class="text">
+            {{item.chatList[item.chatList.length-1].img==undefined?item.chatList[item.chatList.length-1].text:'[图片]'}}
+        </view>
     </view>
     <view class="time">{{item.time}}</view>
 </view>

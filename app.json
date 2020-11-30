@@ -2,12 +2,13 @@
   "pages": [
     "pages/index/index",
     "pages/chat/chat",
-    "pages/plan/plan",
-    "pages/run/run",
     "pages/my/my",
     "pages/newDetails/newDetails",
     "pages/addDynamic/addDynamic",
-    "pages/message/message"
+    "pages/message/message",
+    "pages/userDetails/userDetails",
+    "pages/my/login/login",
+    "pages/my/registered/registered"
   ],
   "tabBar": {
     "color": "#333",
@@ -27,6 +28,12 @@
         "text": "聊天",
         "iconPath": "/image/message.png",
         "selectedIconPath": "/image/message_select.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/image/user.png",
+        "selectedIconPath": "/image/user_select.png"
       }
     ]
   },

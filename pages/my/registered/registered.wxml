@@ -1,0 +1,16 @@
+<!-- pages/my/registered/registered.wxml -->
+<view class="main">
+    <view class="title">注册</view>
+    <view class="from">
+        <input type="text" placeholder="昵称" maxlength="20" data-type="name" bindblur="inputBlur" value="{{name}}" />
+        <input type="text" placeholder="账号/用户名" maxlength="20" data-type="userName" bindblur="inputBlur" value="{{userName}}" />
+        <input type="text" password placeholder="密码" maxlength="20" data-type="password" bindblur="inputBlur" value="{{password}}" />
+        <input type="text" password placeholder="确认密码" maxlength="20" data-type="password2" bindblur="inputBlur" value="{{password2}}" />
+    </view>
+    <view class="btn-page">
+        <view class="btn" hover-class="btn-click" bind:tap="registered">注册</view>
+    </view>
+    <view class="text">
+        <view bind:tap="toLogin">已有账号?去登录</view>
+    </view>
+</view>

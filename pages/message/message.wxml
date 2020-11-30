@@ -1,7 +1,7 @@
 <!-- pages/message/message.wxml -->
 <view class="main">
     <view wx:for="{{friend.chatList}}" wx:key="index" class="msg {{item.isfl==0?'':'msg-r'}}">
-        <image src="{{item.isfl==0?'https://picsum.photos/60/60.webp?random='+friend.id:'https://picsum.photos/60/60.webp?random=111'}}" />
+        <image src="{{item.isfl==0?'https://picsum.photos/60/60.webp?random='+friend.id:'https://picsum.photos/60/60.webp?random=111'}}" bind:tap="toUser" data-isfl="{{item.isfl}}" />
         <view class="content">
             <view class="text" wx:if="{{!item.imgPath}}">{{item.text}}</view>
             <image class="content-img" mode="aspectFill" wx:else src="{{item.imgPath}}" data-src="{{item.imgPath}}" bind:tap="imgShow" />

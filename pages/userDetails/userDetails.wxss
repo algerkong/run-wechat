@@ -1,0 +1,31 @@
+/* pages/userDetails/userDetails.wxss */
+.main .detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail>.head-img {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+}
+
+.detail>.name {
+    font-size: 35rpx;
+    font-weight: 600;
+    color: #333333;
+    line-height: 80rpx;
+}
+
+.detail>.text {
+    line-height: 50rpx;
+    font-size: 25rpx;
+    color: #aaaaaa;
+}
+
+.focus {
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+}

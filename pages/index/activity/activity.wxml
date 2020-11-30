@@ -2,8 +2,9 @@
     <view class="activity-main">
         <view class="banner  bottom20">
             <swiper indicator-dots="{{false}}" autoplay easing-function="{{linear}}">
-                <swiper-item class="swiper-item" item-id="" wx:for="{{5}}" wx:key="index">
-                    <image class="swiper-img" src="{{'https://picsum.photos/600/200.webp?random='+index}}" />
+                <swiper-item class="swiper-item" item-id="" wx:for="{{activityList}}" wx:key="index">
+                    <image class="swiper-img" src="{{item.imgPath}}" />
+                    <view class="img-text">{{item.text}}</view>
                 </swiper-item>
             </swiper>
         </view>

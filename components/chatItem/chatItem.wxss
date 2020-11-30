@@ -15,6 +15,7 @@
     width: 85rpx;
     height: 85rpx;
     border-radius: 10rpx;
+    /* border-radius: 50%; */
 }
 
 .item>.content {
