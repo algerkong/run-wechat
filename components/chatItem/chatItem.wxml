@@ -4,7 +4,7 @@
     <view class="content">
         <view class="name">{{item.name}}</view>
         <view class="text">
-            {{item.chatList[item.chatList.length-1].img==undefined?item.chatList[item.chatList.length-1].text:'[图片]'}}
+            {{item.chatList[item.chatList.length-1].img?item.chatList[item.chatList.length-1].text:'[图片]'}}
         </view>
     </view>
     <view class="time">{{item.time}}</view>
