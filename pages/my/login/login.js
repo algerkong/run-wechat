@@ -27,13 +27,15 @@ Page({
     });
   },
 
+  //登录的方法
   login() {
     let that = this
     let user = data.userFunction.userLogin(
       that.data.userName,
       that.data.password
     )
-    console.log(user);
+
+    //判断是否登录成功
 
     if (user != null) {
 
@@ -62,6 +64,7 @@ Page({
     }
   },
 
+  //根据data-type 获取动态获取input
   inputBlur(e) {
     if (e.currentTarget.dataset.type == 'userName') {
       this.setData({

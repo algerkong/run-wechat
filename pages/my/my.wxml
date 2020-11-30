@@ -14,32 +14,32 @@
         </view>
         <view class="center">
             <view class="list">
-                <view class="item">
+                <view class="item" hover-class="item-click">
                     <van-icon name="column" />
                     <view class="item-name">文件</view>
                     <view class="item-text">你的文件助手</view>
                 </view>
-                <view class="item">
+                <view class="item" hover-class="item-click">
                     <van-icon name="invition" />
                     <view class="item-name">收藏</view>
                     <view class="item-text">图片文件链接</view>
                 </view>
-                <view class="item">
+                <view class="item" hover-class="item-click">
                     <van-icon name="card" />
                     <view class="item-name">钱包</view>
                     <view class="item-text">余额资金管理</view>
                 </view>
-                <view class="item">
+                <view class="item" hover-class="item-click">
                     <van-icon name="underway" />
                     <view class="item-name">日程</view>
                     <view class="item-text">查看近期安排</view>
                 </view>
-                <view class="item">
+                <view class="item" hover-class="item-click">
                     <van-icon name="todo-list" />
                     <view class="item-name">动态</view>
                     <view class="item-text">好友近期动态</view>
                 </view>
-                <view class="item">
+                <view class="item" hover-class="item-click">
                     <van-icon name="coupon" />
                     <view class="item-name">代办</view>
                     <view class="item-text">新建代办事项</view>
@@ -47,7 +47,7 @@
             </view>
         </view>
         <view class="bottom">
-            <view class="btn" hover-class="click">退出登录</view>
+            <view class="btn" hover-class="click" bind:tap="exitLogin">退出登录</view>
         </view>
     </view>
 </view>

@@ -946,6 +946,10 @@ let userFunction = {
         }
         return null
     },
+    userExitLogin() {
+        userList.id = 0
+    },
+
     userFindById(id) {
         let user = userList.list.find(item => {
             return item.id == id
